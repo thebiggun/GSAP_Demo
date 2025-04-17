@@ -102,12 +102,12 @@ gsap.from(".topLeft", {
     y: 50,
     x:-50,
     opacity: 0,
-    ease: "none",
+    ease: "power3.out",
     scrollTrigger: {
         trigger: ".topLeft",
         scroller: "body",
         start: "top 90%",
-        end: "top 60%",
+        end: "top 50%",
         scrub: 2,
     }
 });
@@ -115,12 +115,12 @@ gsap.from(".topRight", {
     y: 50,
     x: 50,
     opacity: 0,
-    ease: "none",
+    ease: "power3.out",
     scrollTrigger: {
         trigger: ".topRight",
         scroller: "body",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 90%",
+        end: "top 50%",
         scrub: 2,
     }
 });
@@ -129,7 +129,7 @@ gsap.from(".bottomLeft", {
     y: 50,
     x: -50,
     opacity: 0,
-    ease: "none",
+    ease: "power3.out",
     scrollTrigger: {
         trigger: ".bottomLeft",
         scroller: "body",
@@ -142,7 +142,7 @@ gsap.from(".bottomRight", {
     y: 50,
     x: 50,
     opacity: 0,
-    ease: "none",
+    ease: "power3.out",
     scrollTrigger: {
         trigger: ".bottomRight",
         scroller: "body",
