@@ -1,0 +1,13 @@
+{
+    "name": "gsap-hcs",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "vite build"
+    },
+    "dependencies": {
+        "gsap": "^3.12.5"
+    },
+    "devDependencies": {
+        "vite": "^5.0.0"
+    }
+}
