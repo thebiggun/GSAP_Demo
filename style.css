@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+}
+.page1, .page2, .page3{
+    width: 100%;
+    height: 100vh;
+}
+
+.page1{
+    overflow: hidden;
+    position: relative;
+}
+
+.nav{
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav svg{
+    opacity: 0;
+}
+
+.navBttn{
+    border:#ff3366 0.2vh solid;
+    padding: 0.5vw 1vw;
+    border-radius: 1vh;
+    background-color: #111;
+}
+
+.rightNav{
+    display: flex;
+    align-items: center;
+    gap: 2vw; 
+}
+.rightNav h1{
+    font-size: 1.3vw;
+    background: linear-gradient(0deg, #ff6b6b, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1;
+    position: relative;
+}
+
+.rightNav h1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(0deg, #ff6b6b, #ff3366);
+    transition: width 0.3s ease;
+}
+
+.rightNav h1.underline::after {
+    width: 100%;
+}
+
+.leftNav{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.nav_heading{
+    background: linear-gradient(0deg, #ff6b6b, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5vw;
+    font-weight: 700;
+    opacity: 1;
+}
+.page1Body{
+    display: flex;
+    margin: 0vw 2vw;
+    margin-top: 1vw;
+    margin-bottom: 3.9vw;
+    width: 96vw;
+    height: 60vh;
+}
+.left{
+    width: 50%;
+    height: 100%;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.up{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.up h1{
+    font-size: 4.5vw;
+}
+
+.up h1 span{
+    display: inline-block;
+}
+
+.down{
+    width: 100%;
+    height: 35%;
+    padding: 1vw 0vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.down p{
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.down button{
+    width: fit-content;
+    padding: 0.5vw 1vw;
+    border-radius: 1vh;
+    font-size: 1.1vw;
+    font-weight: 600;
+    background: linear-gradient(0deg, #ff6b6b, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: #ff3366 0.2vh solid;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.down button:hover{
+    transform: scale(1.1);
+}
+
+.page1Foot{
+    width: 100%;
+    height: 12vh;
+    background: linear-gradient(-40deg, #ff6b6b, #ff3366);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    padding: 1vh 2vh;
+}
+
+.move{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 5.7vw;
+}
+
+.move img{
+    height: 60%;
+    object-fit: cover;
+}
+
+.rubber{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    bottom: 17vh;
+    z-index: 9;
+}
+
+.page2{
+    position: relative;
+    bottom: 31vh;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 40px;
+    padding-top: 0px;
+    overflow: hidden;
+}
+.page2Body{
+    background: linear-gradient(-40deg, #ff6b6b, #ff3366);
+    border-radius: 10px;
+    padding: 2px;
+}
+.innerBox{
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

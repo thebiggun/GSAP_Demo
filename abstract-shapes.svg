@@ -1,0 +1,31 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="100%" style="stop-color:#ff3366"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circles -->
+  <circle cx="200" cy="300" r="150" fill="url(#mainGradient)" opacity="0.1" filter="url(#glow)"/>
+  <circle cx="600" cy="300" r="180" fill="url(#mainGradient)" opacity="0.15" filter="url(#glow)"/>
+  
+  <!-- Abstract shapes -->
+  <path d="M400 100 C300 150, 200 250, 300 400 C400 550, 600 450, 500 300 C400 150, 500 50, 400 100" fill="none" stroke="url(#mainGradient)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Floating elements -->
+  <rect x="350" y="200" width="100" height="100" rx="20" fill="url(#mainGradient)" opacity="0.8" transform="rotate(45 400 250)" filter="url(#glow)"/>
+  <circle cx="500" cy="350" r="40" fill="url(#mainGradient)" opacity="0.6" filter="url(#glow)"/>
+  <circle cx="300" cy="250" r="25" fill="url(#mainGradient)" opacity="0.7" filter="url(#glow)"/>
+  
+  <!-- Connecting lines -->
+  <line x1="300" y1="250" x2="400" y2="250" stroke="url(#mainGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="250" x2="500" y2="350" stroke="url(#mainGradient)" stroke-width="2" opacity="0.5"/>
+</svg>
